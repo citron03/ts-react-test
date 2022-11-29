@@ -10,6 +10,10 @@ https://redux.js.org/introduction/getting-started
 
 npx create-react-app my-app --template redux-typescript
 
+#### setting prettier
+
+https://prettier.io/docs/en/configuration.html
+
 ## Available Scripts
 
 In the project directory, you can run:
