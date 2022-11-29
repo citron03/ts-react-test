@@ -18,10 +18,13 @@ const Timer = () => {
       console.log("check")
       if(isValid) {
         setTime((prev) => prev - 1)
+      } else {
+        clearInterval(timer)
       }
     }, 1000)
-    if(time < 0) {
+    if (time < 0) {
       clearInterval(timer)
+      isValid = false
     }
     return () => clearInterval(timer)
   }, [time])
